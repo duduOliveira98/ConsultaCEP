@@ -1,0 +1,10 @@
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\bin\Debug\ConsutarCeps.exe.config
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\bin\Debug\ConsutarCeps.exe
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\bin\Debug\ConsutarCeps.pdb
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.csprojAssemblyReference.cache
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.FRMconsultar_cep.resources
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.Properties.Resources.resources
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.csproj.GenerateResource.cache
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.csproj.CoreCompileInputs.cache
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.exe
+C:\Users\eduar\source\repos\ConsutarCeps\ConsutarCeps\obj\Debug\ConsutarCeps.pdb

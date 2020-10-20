@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txCep = new System.Windows.Forms.TextBox();
             this.ENDERECO = new System.Windows.Forms.GroupBox();
             this.txCidade = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.btConsultar = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
+            this.txCep = new System.Windows.Forms.MaskedTextBox();
             this.ENDERECO.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,14 +54,6 @@
             this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "CEP:";
-            // 
-            // txCep
-            // 
-            this.txCep.BackColor = System.Drawing.SystemColors.Info;
-            this.txCep.Location = new System.Drawing.Point(32, 62);
-            this.txCep.Name = "txCep";
-            this.txCep.Size = new System.Drawing.Size(184, 22);
-            this.txCep.TabIndex = 1;
             // 
             // ENDERECO
             // 
@@ -161,11 +153,12 @@
             // 
             this.btConsultar.BackgroundImage = global::ConsutarCeps.Properties.Resources.busca_cep;
             this.btConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btConsultar.Location = new System.Drawing.Point(300, 36);
+            this.btConsultar.Location = new System.Drawing.Point(297, 19);
             this.btConsultar.Name = "btConsultar";
-            this.btConsultar.Size = new System.Drawing.Size(181, 58);
+            this.btConsultar.Size = new System.Drawing.Size(204, 65);
             this.btConsultar.TabIndex = 3;
             this.btConsultar.UseVisualStyleBackColor = true;
+            this.btConsultar.Click += new System.EventHandler(this.btConsultar_Click);
             // 
             // btLimpar
             // 
@@ -178,6 +171,7 @@
             this.btLimpar.TabIndex = 4;
             this.btLimpar.Text = "LIMPAR";
             this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // btSair
             // 
@@ -189,6 +183,16 @@
             this.btSair.TabIndex = 5;
             this.btSair.Text = "SAIR";
             this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            // 
+            // txCep
+            // 
+            this.txCep.BackColor = System.Drawing.SystemColors.Info;
+            this.txCep.Location = new System.Drawing.Point(32, 62);
+            this.txCep.Mask = "00000-999";
+            this.txCep.Name = "txCep";
+            this.txCep.Size = new System.Drawing.Size(189, 22);
+            this.txCep.TabIndex = 6;
             // 
             // FRMconsultar_cep
             // 
@@ -196,14 +200,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(581, 413);
+            this.Controls.Add(this.txCep);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.btConsultar);
             this.Controls.Add(this.ENDERECO);
-            this.Controls.Add(this.txCep);
             this.Controls.Add(this.label1);
             this.Name = "FRMconsultar_cep";
-            this.Text = "Form1";
+            this.Text = "CONSULTAR CEP";
             this.ENDERECO.ResumeLayout(false);
             this.ENDERECO.PerformLayout();
             this.ResumeLayout(false);
@@ -214,7 +218,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txCep;
         private System.Windows.Forms.GroupBox ENDERECO;
         private System.Windows.Forms.TextBox txRua;
         private System.Windows.Forms.Label label6;
@@ -228,6 +231,7 @@
         private System.Windows.Forms.Button btConsultar;
         private System.Windows.Forms.Button btLimpar;
         private System.Windows.Forms.Button btSair;
+        private System.Windows.Forms.MaskedTextBox txCep;
     }
 }
 
